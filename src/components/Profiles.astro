@@ -8,7 +8,7 @@ import { profiles } from '../data/profiles'
   {
     profiles.map(({id, alt, text}) => (
      <article class="flex justify-center w-full flex-wrap lg:flex-nowrap"
-      class:list="{[{'lg:flex-row-reverse': index % 2 !== 0}]}">
+      class:list="{'lg:flex-row-reverse': index % 2 !== 0}">
       <div>
       <Image width={192} height={288} class="lg:max-w-48 h-auto" src={import(`../assets/images/profiles/${id}-192w.jpg`)} alt={alt} />
       </div>
